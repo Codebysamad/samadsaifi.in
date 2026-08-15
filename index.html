@@ -1,0 +1,761 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samad Saifi - Artificial Intelligence Research Fellow at Stanford University. Autonomous AI Agents, Foundation Models, Web3 ZKP, and NASA Aerospace AI Specialist.">
+  <title>SAMAD SAIFI // Stanford AI Research Fellow & Autonomous Systems Pioneer</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;800&family=Outfit:wght@300;400;600;700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="cyan">
+  <!-- Interactive Particle Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="cyber-grid-overlay"></div>
+
+  <!-- Main HUD Header -->
+  <header class="hud-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">SAMAD SAIFI<span class="logo-sub">// STANFORD AI FELLOW</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#hero" class="nav-item active"><span class="nav-num">01</span> OVERVIEW</a>
+        <a href="#simulator" class="nav-item"><span class="nav-num">02</span> AI SIMULATOR</a>
+        <a href="#research" class="nav-item"><span class="nav-num">03</span> RESEARCH</a>
+        <a href="#experience" class="nav-item"><span class="nav-num">04</span> CHRONO-FEED</a>
+        <a href="#terminal" class="nav-item"><span class="nav-num">05</span> CLI TERMINAL</a>
+        <a href="#skills" class="nav-item"><span class="nav-num">06</span> SKILLS</a>
+        <a href="#contact" class="nav-item"><span class="nav-num">07</span> CONTACT</a>
+      </nav>
+
+      <div class="hud-controls">
+        <!-- Audio FX Toggle -->
+        <button id="sound-toggle" class="hud-btn" title="Toggle Sci-Fi SFX">
+          <span class="btn-icon">🔊</span>
+          <span class="btn-label">SFX: ON</span>
+        </button>
+
+        <!-- Theme Switcher Dropdown -->
+        <div class="theme-picker">
+          <button id="theme-btn" class="hud-btn">
+            <span class="btn-icon">🎨</span>
+            <span class="btn-label">THEME</span>
+          </button>
+          <div class="theme-menu" id="theme-menu">
+            <button data-set-theme="cyan" class="theme-opt active"><span class="dot cyan"></span> Quantum Cyan</button>
+            <button data-set-theme="purple" class="theme-opt"><span class="dot purple"></span> Neon Violet</button>
+            <button data-set-theme="emerald" class="theme-opt"><span class="dot emerald"></span> Matrix Emerald</button>
+            <button data-set-theme="amber" class="theme-opt"><span class="dot amber"></span> Cyber Amber</button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-btn" class="mobile-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <div class="system-status-pill">
+          <span class="status-pulse"></span>
+          <span class="status-text">SYSTEM ONLINE // STANFORD HAI RESEARCH FELLOW // PhD CANDIDATE</span>
+        </div>
+
+        <h1 class="glitch-title" data-text="SAMAD SAIFI">SAMAD SAIFI</h1>
+        <h2 class="hero-subtitle">
+          <span class="typing-text">AI RESEARCH FELLOW @ STANFORD UNIVERSITY</span>
+        </h2>
+
+        <p class="hero-desc">
+          Advancing human-centered ethical AI, autonomous agent orchestration, zero-knowledge machine learning frameworks, and aerospace AI optimization. Pioneer across Stanford HAI, NASA, Web3, and Android Open Source Project.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#simulator" class="cyber-btn primary">
+            <span class="btn-corner"></span>
+            <span class="btn-text">LAUNCH AI SIMULATOR ⚡</span>
+          </a>
+          <a href="#terminal" class="cyber-btn secondary">
+            <span class="btn-corner"></span>
+            <span class="btn-text">OPEN TERMINAL CLI 💻</span>
+          </a>
+          <a href="#research" class="cyber-btn outline">
+            <span class="btn-text">EXPLORE RESEARCH 🔬</span>
+          </a>
+        </div>
+
+        <!-- Metric Tickers -->
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <div class="metric-value" data-target="15">0</div>
+            <div class="metric-label">Research & Initiatives</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" data-target="10">0M+</div>
+            <div class="metric-label">AOSP Systems Impact</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" data-target="100">%</div>
+            <div class="metric-label">Ethical AI Alignment</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" data-target="5">0</div>
+            <div class="metric-label">Global Languages</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Orb HUD -->
+      <div class="hero-visual">
+        <div class="hologram-container">
+          <div class="orb-ring ring-1"></div>
+          <div class="orb-ring ring-2"></div>
+          <div class="orb-ring ring-3"></div>
+          <div class="orb-core">
+            <div class="orb-pulse"></div>
+            <div class="core-symbol">◈</div>
+          </div>
+          <div class="visualizer-waveform">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="hud-floating-card top-right">
+          <div class="hud-card-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="card-title">STANFORD HAI NODE</span>
+          </div>
+          <p>Foundation Models & Autonomous Agent Orchestration</p>
+        </div>
+        <div class="hud-floating-card bottom-left">
+          <div class="hud-card-header">
+            <span class="card-title">NASA AEROSPACE AI</span>
+          </div>
+          <p>Autonomous Flight & Technical Engineering Optimization</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: AI AGENT WORKFLOW SIMULATOR -->
+    <section id="simulator" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// INTERACTIVE EXPERIMENTATION //</span>
+        <h2 class="section-title">AUTONOMOUS AI AGENT SIMULATOR</h2>
+        <p class="section-subtitle">Configure, orchestrate, and observe multi-agent AI execution pipelines in real-time.</p>
+      </div>
+
+      <div class="simulator-grid">
+        <!-- Configuration Panel -->
+        <div class="sim-config-panel glass-card">
+          <h3 class="panel-title">◈ AGENT PIPELINE PARAMETERS</h3>
+          
+          <div class="control-group">
+            <label for="agent-task">Select Target Objective</label>
+            <select id="agent-task" class="cyber-select">
+              <option value="ethical-audit">Ethical AI & Safety Guardrail Audit</option>
+              <option value="zkp-ml">Zero-Knowledge Machine Learning Verification</option>
+              <option value="flight-opt">NASA Autonomous Flight Path Optimization</option>
+              <option value="aosp-benchmark">AOSP Firmware Stability Benchmark</option>
+              <option value="cloud-orchestration">AWS Decentralized GPU Compute Dispatch</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <label for="agent-model">Foundation Engine Core</label>
+            <select id="agent-model" class="cyber-select">
+              <option value="stanford-70b">Stanford HAI Foundation 70B (Human-in-Loop)</option>
+              <option value="zkp-quantum">ZKP Decentralized Trustless Engine</option>
+              <option value="aosp-kernel">AOSP Custom Low-Latency Kernel</option>
+              <option value="nasa-aero">NASA Aerospace Flight Neural Core</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <label>Agent Swarm Scale (<span id="swarm-count-val">5</span> Agents)</label>
+            <input type="range" id="swarm-scale" min="2" max="12" value="5" class="cyber-slider">
+          </div>
+
+          <div class="control-group">
+            <label>Autonomous Execution Mode</label>
+            <div class="radio-group">
+              <label class="cyber-radio">
+                <input type="radio" name="exec-mode" value="strict" checked> Strict Ethical Guardrail
+              </label>
+              <label class="cyber-radio">
+                <input type="radio" name="exec-mode" value="autonomous"> Fully Autonomous Swarm
+              </label>
+            </div>
+          </div>
+
+          <button id="run-sim-btn" class="cyber-btn primary full-width">
+            <span class="btn-icon">▶</span> RUN AUTONOMOUS SIMULATION
+          </button>
+        </div>
+
+        <!-- Live Visualizer Screen -->
+        <div class="sim-display-panel glass-card">
+          <div class="panel-hud-header">
+            <span class="status-indicator" id="sim-status-dot">● READY</span>
+            <span class="hud-title">PIPELINE MONITOR & AGENT NODE GRAPH</span>
+            <span class="hud-speed" id="sim-latency">LATENCY: 12ms</span>
+          </div>
+
+          <!-- Execution Canvas Diagram -->
+          <div class="sim-nodes-canvas" id="sim-canvas-container">
+            <div class="node-item origin-node" id="node-input">
+              <div class="node-icon">📥</div>
+              <div class="node-name">TASK INPUT</div>
+            </div>
+
+            <div class="node-connector conn-1"></div>
+
+            <div class="node-item swarm-node" id="node-orchestrator">
+              <div class="node-icon">🧠</div>
+              <div class="node-name">ORCHESTRATOR</div>
+            </div>
+
+            <div class="node-connector conn-2"></div>
+
+            <div class="node-item swarm-node" id="node-guardrail">
+              <div class="node-icon">🛡️</div>
+              <div class="node-name">ETHICS GUARD</div>
+            </div>
+
+            <div class="node-connector conn-3"></div>
+
+            <div class="node-item output-node" id="node-output">
+              <div class="node-icon">⚡</div>
+              <div class="node-name">DISPATCH RESULT</div>
+            </div>
+          </div>
+
+          <!-- Live Log Console -->
+          <div class="sim-console">
+            <div class="console-header">
+              <span>REAL-TIME AGENT TELEMETRY LOGS</span>
+              <button id="clear-sim-logs" class="console-clear">CLEAR</button>
+            </div>
+            <div class="console-body" id="sim-log-output">
+              <div class="log-line info">[SYSTEM] Autonomous Agent Framework Initialized. Select parameters and launch.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: RESEARCH & TECHNICAL PROJECTS MATRIX -->
+    <section id="research" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// INNOVATION ARCHIVE //</span>
+        <h2 class="section-title">RESEARCH & TECHNICAL MATRIX</h2>
+        <p class="section-subtitle">Pioneering work across Stanford HAI, NASA Aerospace, Web3 ZKP, and Open Source Firmware.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">ALL PROJECTS</button>
+        <button class="filter-btn" data-filter="stanford">STANFORD HAI & AI</button>
+        <button class="filter-btn" data-filter="nasa">NASA AEROSPACE</button>
+        <button class="filter-btn" data-filter="web3">WEB3 & ZKP</button>
+        <button class="filter-btn" data-filter="aosp">AOSP & ANDROID</button>
+        <button class="filter-btn" data-filter="cloud">CLOUD & INFRASTRUCTURE</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card glass-card" data-category="stanford">
+          <div class="card-badge">STANFORD HAI</div>
+          <h3 class="project-title">Human-Centered Ethical AI & Autonomous Agent Orchestration</h3>
+          <p class="project-desc">
+            Research on foundation models to enable ethical AI deployment. Developed business workflow optimization algorithms utilizing autonomous AI agents with human-in-the-loop oversight.
+          </p>
+          <div class="tech-tags">
+            <span class="tag">Foundation Models</span>
+            <span class="tag">AI Agents</span>
+            <span class="tag">Prompt Strategy</span>
+            <span class="tag">Ethics</span>
+          </div>
+          <div class="card-footer">
+            <span class="metric">Impact: Stanford HAI Research</span>
+            <button class="card-details-btn" data-project="proj1">VIEW SPECS ➔</button>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass-card" data-category="web3">
+          <div class="card-badge">STANFORD AI & WEB3 LAB</div>
+          <h3 class="project-title">Trustless Frameworks & ZKP Machine Learning</h3>
+          <p class="project-desc">
+            Integrating Zero-Knowledge Proofs (ZKP) into ML models for privacy-preserving AI. Designed protocols for decentralized GPU compute markets and sovereign data ownership.
+          </p>
+          <div class="tech-tags">
+            <span class="tag">ZKP</span>
+            <span class="tag">Decentralized Compute</span>
+            <span class="tag">Generative AI</span>
+            <span class="tag">Web3</span>
+          </div>
+          <div class="card-footer">
+            <span class="metric">Privacy: 100% Verifiable</span>
+            <button class="card-details-btn" data-project="proj2">VIEW SPECS ➔</button>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass-card" data-category="nasa">
+          <div class="card-badge">NASA AEROSPACE</div>
+          <h3 class="project-title">Autonomous Flight Systems & AI Optimization</h3>
+          <p class="project-desc">
+            Conducted research on AI applications for autonomous flight and aerospace system optimization at NASA. Bridged technical engineering with space learning and development.
+          </p>
+          <div class="tech-tags">
+            <span class="tag">Aerospace AI</span>
+            <span class="tag">Autonomous Flight</span>
+            <span class="tag">Systems Optimization</span>
+          </div>
+          <div class="card-footer">
+            <span class="metric">Domain: Aviation & Space</span>
+            <button class="card-details-btn" data-project="proj3">VIEW SPECS ➔</button>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card glass-card" data-category="aosp">
+          <div class="card-badge">AOSP & ANDROID</div>
+          <h3 class="project-title">AOSP Custom ROM Firmware & Kernel Optimization</h3>
+          <p class="project-desc">
+            Testing, optimizing, and deploying custom Android Open Source Project (AOSP) distributions (Evolution X, PixelOS). Bootloader unlocking, security integrations, and performance benchmarks.
+          </p>
+          <div class="tech-tags">
+            <span class="tag">AOSP</span>
+            <span class="tag">Custom Firmware</span>
+            <span class="tag">Evolution X</span>
+            <span class="tag">Linux Kernel</span>
+          </div>
+          <div class="card-footer">
+            <span class="metric">Users: 10M+ Global Devices</span>
+            <button class="card-details-btn" data-project="proj4">VIEW SPECS ➔</button>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card glass-card" data-category="cloud">
+          <div class="card-badge">AWS & GOOGLE CLOUD</div>
+          <h3 class="project-title">Decentralized Infrastructure & GenAI Cloud Architecture</h3>
+          <p class="project-desc">
+            AWS Educator & Google Cloud Study Jam lead. Designed cloud-native architectures for scalable Generative AI deployment, automated security pipelines, and lab environments.
+          </p>
+          <div class="tech-tags">
+            <span class="tag">AWS Cloud</span>
+            <span class="tag">Google Cloud</span>
+            <span class="tag">DevOps</span>
+            <span class="tag">GenAI Infrastructure</span>
+          </div>
+          <div class="card-footer">
+            <span class="metric">Mentored: 5,000+ Engineers</span>
+            <button class="card-details-btn" data-project="proj5">VIEW SPECS ➔</button>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card glass-card" data-category="stanford">
+          <div class="card-badge">ARIZONA STATE & OXFORD</div>
+          <h3 class="project-title">Scalable Human-Centered Data Strategy</h3>
+          <p class="project-desc">
+            Academic research at ASU and Oxford focused on Computer Science, cloud architecture, and data strategy to prepare for leadership in aerospace, AI, and global business optimization.
+          </p>
+          <div class="tech-tags">
+            <span class="tag">Data Strategy</span>
+            <span class="tag">ASU Research</span>
+            <span class="tag">Oxford Academic</span>
+          </div>
+          <div class="card-footer">
+            <span class="metric">Academic Excellence</span>
+            <button class="card-details-btn" data-project="proj6">VIEW SPECS ➔</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 4: INTERACTIVE CHRONO-TIMELINE -->
+    <section id="experience" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// CAREER LOGS //</span>
+        <h2 class="section-title">HOLOGRAPHIC CHRONO-FEED</h2>
+        <p class="section-subtitle">Comprehensive career trajectory across academic research, NASA, Web3 labs, and open source.</p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Timeline Line -->
+        <div class="timeline-line"></div>
+
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-date">AUG 2025 - PRESENT</div>
+            <h3 class="role-title">Artificial Intelligence Research Fellow</h3>
+            <h4 class="company-name">Stanford University // San Jose, CA</h4>
+            <ul class="role-bullets">
+              <li>Conduct research at the intersection of technical innovation and ethical AI implementation.</li>
+              <li>Optimize business workflows through deployment of autonomous AI agents.</li>
+              <li>Utilize strategic prompt engineering to enhance AI system performance and safety.</li>
+              <li>Collaborate with interdisciplinary teams to prioritize human agency in AI development.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-date">SEP 2025 - PRESENT</div>
+            <h3 class="role-title">Research Fellow</h3>
+            <h4 class="company-name">Stanford Institute for Human-Centered AI (HAI)</h4>
+            <ul class="role-bullets">
+              <li>Contributed to the development of Human-Centered Artificial Intelligence at Stanford HAI.</li>
+              <li>Researched societal impacts of foundation models to ensure ethical AI applications.</li>
+              <li>Designed AI-driven business workflow optimizations focused on autonomous AI agents.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-date">FEB 2023 - PRESENT</div>
+            <h3 class="role-title">Research Engineer</h3>
+            <h4 class="company-name">Stanford AI & Web3 Research Lab Association</h4>
+            <ul class="role-bullets">
+              <li>Conducted research on the intersection of decentralized ledger technologies and generative AI.</li>
+              <li>Developed trustless frameworks for AI agent coordination and decentralized GPU compute markets.</li>
+              <li>Integrated Zero-Knowledge Proofs (ZKP) to enhance data privacy in machine learning.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-date">JAN 2022 - PRESENT</div>
+            <h3 class="role-title">Learning And Development Specialist</h3>
+            <h4 class="company-name">NASA - National Aeronautics and Space Administration</h4>
+            <ul class="role-bullets">
+              <li>Developed comprehensive understanding of aerospace systems through specialized research.</li>
+              <li>Conducted research on AI applications for autonomous flight and technical engineering optimization.</li>
+              <li>Engaged with industry leaders to transition professional roles in aviation and aerospace AI.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-date">AUG 2018 - PRESENT</div>
+            <h3 class="role-title">Custom ROM Tester & AOSP Contributor</h3>
+            <h4 class="company-name">Android Open Source Project (AOSP)</h4>
+            <ul class="role-bullets">
+              <li>Specialized in testing, optimizing, and deploying AOSP-based custom firmware across hardware environments.</li>
+              <li>Evaluated system stability, performance benchmarks, and security for Evolution X and PixelOS.</li>
+              <li>Leveraged Android stack expertise, bootloader unlocking, and kernel-level customization.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-date">APR 2024 - PRESENT</div>
+            <h3 class="role-title">Academic Scholar & Resource Affiliate</h3>
+            <h4 class="company-name">Arizona State University</h4>
+            <ul class="role-bullets">
+              <li>Interdisciplinary research focusing on Computer Science and Advanced AI Strategy.</li>
+              <li>Developed cloud architecture and data strategy for human-centered systems.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-date">COMMUNITY LEADERSHIP</div>
+            <h3 class="role-title">IEEE, AWS Educator & GDG San Francisco Member</h3>
+            <h4 class="company-name">IEEE // AWS Educate // Google for Developers</h4>
+            <ul class="role-bullets">
+              <li>IEEE Robotics and Automation Society member focusing on ethical AI & cloud computing.</li>
+              <li>AWS Educator bridging academic theory with production cloud infrastructure.</li>
+              <li>GDG San Francisco & Google Cloud Study Jam lead for Generative AI.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: INTERACTIVE CLI TERMINAL -->
+    <section id="terminal" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// DIRECT COMMAND LINE //</span>
+        <h2 class="section-title">QUANTUM CLI TERMINAL</h2>
+        <p class="section-subtitle">Interact with Samad's synthetic digital twin via raw terminal commands.</p>
+      </div>
+
+      <div class="terminal-window glass-card">
+        <div class="terminal-bar">
+          <div class="term-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="term-title">samad-saifi-cli v3.6.0 (x86_64-quantum-linux)</div>
+          <div class="term-action-buttons">
+            <button id="clear-term-btn" class="term-btn">CLEAR</button>
+          </div>
+        </div>
+
+        <div class="terminal-body" id="term-body">
+          <div class="term-line">
+            <span class="term-prompt">samad@stanford-hai:~$</span> <span class="term-welcome">WELCOME TO SAMAD SAIFI'S CLI ENGINE. Type <span class="highlight">'help'</span> for available commands.</span>
+          </div>
+        </div>
+
+        <!-- Quick Command Chips -->
+        <div class="quick-commands">
+          <span class="quick-label">QUICK COMMANDS:</span>
+          <button class="cmd-chip" data-cmd="help">help</button>
+          <button class="cmd-chip" data-cmd="bio">bio</button>
+          <button class="cmd-chip" data-cmd="research">research</button>
+          <button class="cmd-chip" data-cmd="stanford">stanford</button>
+          <button class="cmd-chip" data-cmd="nasa">nasa</button>
+          <button class="cmd-chip" data-cmd="skills">skills</button>
+          <button class="cmd-chip" data-cmd="contact">contact</button>
+        </div>
+
+        <form id="term-form" class="terminal-input-row">
+          <span class="term-prompt">samad@stanford-hai:~$</span>
+          <input type="text" id="term-input" class="term-input" placeholder="Type a command (e.g., 'help', 'bio', 'stanford')..." autocomplete="off" spellcheck="false">
+          <button type="submit" class="term-send">EXECUTE ↵</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECTION 6: SKILLS & GLOBAL LANGUAGES -->
+    <section id="skills" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// COMPETENCY MATRIX //</span>
+        <h2 class="section-title">CORE SKILLS & LANGUAGES</h2>
+        <p class="section-subtitle">Technical mastery and international communication capabilities.</p>
+      </div>
+
+      <div class="skills-wrapper">
+        <!-- Skill Bars -->
+        <div class="skills-column glass-card">
+          <h3 class="column-title">◈ TECHNICAL PROFICIENCIES</h3>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Foundation Model Research</span>
+              <span class="skill-pct">98%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 98%;"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">AI Agent Orchestration</span>
+              <span class="skill-pct">96%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 96%;"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Prompt Engineering & Strategy</span>
+              <span class="skill-pct">99%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 99%;"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Zero-Knowledge Proofs (ZKP) & Web3</span>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">AOSP Custom ROM & Kernel Systems</span>
+              <span class="skill-pct">95%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Scalable Cloud Architecture (AWS & GCP)</span>
+              <span class="skill-pct">94%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Languages Cards -->
+        <div class="languages-column glass-card">
+          <h3 class="column-title">🌐 GLOBAL LANGUAGES</h3>
+          <div class="languages-grid">
+            <div class="lang-card">
+              <div class="lang-flag">🇺🇸 / 🇬🇧</div>
+              <div class="lang-name">English</div>
+              <div class="lang-level">Full Professional</div>
+            </div>
+            <div class="lang-card">
+              <div class="lang-flag">🇮🇳</div>
+              <div class="lang-name">Hindi</div>
+              <div class="lang-level">Full Professional</div>
+            </div>
+            <div class="lang-card">
+              <div class="lang-flag">🇨🇳</div>
+              <div class="lang-name">Chinese</div>
+              <div class="lang-level">Limited Working</div>
+            </div>
+            <div class="lang-card">
+              <div class="lang-flag">🇯🇵</div>
+              <div class="lang-name">Japanese</div>
+              <div class="lang-level">Elementary</div>
+            </div>
+            <div class="lang-card">
+              <div class="lang-flag">🇷🇺</div>
+              <div class="lang-name">Russian</div>
+              <div class="lang-level">Elementary</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CONTACT & HOLOGRAPHIC TRANSMISSION -->
+    <section id="contact" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// INITIATE TRANSMISSION //</span>
+        <h2 class="section-title">CONNECT WITH SAMAD SAIFI</h2>
+        <p class="section-subtitle">Reach out for research collaborations, speakings, or advisory roles.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info glass-card">
+          <h3 class="card-h3">◈ DIRECT COMM CHANNELS</h3>
+          
+          <div class="comm-link-item">
+            <span class="comm-icon">📧</span>
+            <div class="comm-text">
+              <span class="comm-label">Primary Email</span>
+              <a href="mailto:iamsamadsaifi09@gmail.com" class="comm-value">iamsamadsaifi09@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="comm-link-item">
+            <span class="comm-icon">🔗</span>
+            <div class="comm-text">
+              <span class="comm-label">LinkedIn Profile</span>
+              <a href="https://www.linkedin.com/in/samadsaifi09" target="_blank" rel="noopener" class="comm-value">linkedin.com/in/samadsaifi09</a>
+            </div>
+          </div>
+
+          <div class="comm-link-item">
+            <span class="comm-icon">🌐</span>
+            <div class="comm-text">
+              <span class="comm-label">Portfolio Domain</span>
+              <a href="https://samadsaifi.tech/" target="_blank" rel="noopener" class="comm-value">samadsaifi.tech</a>
+            </div>
+          </div>
+
+          <div class="comm-link-item">
+            <span class="comm-icon">📍</span>
+            <div class="comm-text">
+              <span class="comm-label">Location</span>
+              <span class="comm-value">San Jose, California, USA</span>
+            </div>
+          </div>
+
+          <button id="download-cv-btn" class="cyber-btn primary full-width margin-top-20">
+            <span class="btn-icon">📄</span> DOWNLOAD FULL RESUME (PDF)
+          </button>
+        </div>
+
+        <form id="contact-form" class="contact-form glass-card">
+          <h3 class="card-h3">⚡ TRANSMIT DIRECT MESSAGE</h3>
+
+          <div class="form-group">
+            <label for="sender-name">Your Name / Organization</label>
+            <input type="text" id="sender-name" class="cyber-input" placeholder="e.g. Dr. Alex Vance / Stanford HAI" required>
+          </div>
+
+          <div class="form-group">
+            <label for="sender-email">Your Email Address</label>
+            <input type="email" id="sender-email" class="cyber-input" placeholder="e.g. alex@stanford.edu" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message-subject">Subject / Research Area</label>
+            <input type="text" id="message-subject" class="cyber-input" placeholder="e.g. AI Agent Collaboration Proposal" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message-body">Message Transmission</label>
+            <textarea id="message-body" class="cyber-textarea" rows="4" placeholder="Enter your message details..." required></textarea>
+          </div>
+
+          <button type="submit" class="cyber-btn secondary full-width">
+            <span class="btn-icon">📡</span> SEND TRANSMISSION
+          </button>
+          <div id="contact-form-status" class="form-status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Detail Modal -->
+  <div id="project-modal" class="modal-backdrop">
+    <div class="modal-container glass-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="hud-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="logo-text">SAMAD SAIFI ◈ 2026</span>
+        <span class="footer-sub">Stanford University AI Research Fellow</span>
+      </div>
+      <div class="footer-center">
+        <span class="system-time" id="system-time">UTC: 00:00:00</span>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:iamsamadsaifi09@gmail.com">EMAIL</a>
+        <a href="https://www.linkedin.com/in/samadsaifi09" target="_blank" rel="noopener">LINKEDIN</a>
+        <a href="https://samadsaifi.tech/" target="_blank" rel="noopener">PORTFOLIO</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
